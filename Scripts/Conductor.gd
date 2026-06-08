@@ -1,7 +1,10 @@
 extends AudioStreamPlayer
 
-export var bpm := 100
-export var measures := 4
+signal beat(position)
+signal measure_signal(position)
+
+@export var bpm := 100
+@export var measures := 4
 
 # Tracking the beat and song position
 var song_position = 0.0
@@ -15,8 +18,6 @@ var measure = 1
 var closest = 0
 var time_off_beat = 0.0
 
-signal beat(position)
-signal measure(position)
 
 
 func _ready():
@@ -35,8 +36,8 @@ func _report_beat():
 	if last_reported_beat < song_position_in_beats:
 		if measure > measures:
 			measure = 1
-		emit_signal("beat", song_position_in_beats)
-		emit_signal("measure", measure)
+		beat.emit(song_position_in_beats)
+		measure_signal.emit(measure)
 		last_reported_beat = song_position_in_beats
 		measure += 1
 

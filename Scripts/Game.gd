@@ -28,13 +28,12 @@ var instance
 
 
 func _ready():
-	randomize()
 	$Conductor.play_with_beat_offset(8)
 
 
 func _input(event):
 	if event.is_action("escape"):
-		if get_tree().change_scene("res://Scenes/Menu.tscn") != OK:
+		if get_tree().change_scene_to_file("res://Scenes/Menu.tscn") != OK:
 			print ("Error changing scene to Menu")
 
 
@@ -112,7 +111,7 @@ func _on_Conductor_beat(position):
 		Global.good = good
 		Global.okay = okay
 		Global.missed = missed
-		if get_tree().change_scene("res://Scenes/End.tscn") != OK:
+		if get_tree().change_scene_to_file("res://Scenes/End.tscn") != OK:
 			print ("Error changing scene to End")
 
 
@@ -120,14 +119,14 @@ func _on_Conductor_beat(position):
 func _spawn_notes(to_spawn):
 	if to_spawn > 0:
 		lane = randi() % 3
-		instance = note.instance()
+		instance = note.instantiate()
 		instance.initialize(lane)
 		add_child(instance)
 	if to_spawn > 1:
 		while rand == lane:
 			rand = randi() % 3
 		lane = rand
-		instance = note.instance()
+		instance = note.instantiate()
 		instance.initialize(lane)
 		add_child(instance)
 		

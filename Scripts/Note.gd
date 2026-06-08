@@ -16,6 +16,7 @@ func _ready():
 	pass
 
 
+	
 func _physics_process(delta):
 	if !hit:
 		position.y += speed * delta
@@ -28,13 +29,13 @@ func _physics_process(delta):
 
 func initialize(lane):
 	if lane == 0:
-		$AnimatedSprite.frame = 0
+		$AnimatedSprite2D.frame = 0
 		position = LEFT_LANE_SPAWN
 	elif lane == 1:
-		$AnimatedSprite.frame = 1
+		$AnimatedSprite2D.frame = 1
 		position = CENTRE_LANE_SPAWN
 	elif lane == 2:
-		$AnimatedSprite.frame = 2
+		$AnimatedSprite2D.frame = 2
 		position = RIGHT_LANE_SPAWN
 	else:
 		printerr("Invalid lane set for note: " + str(lane))
@@ -45,7 +46,7 @@ func initialize(lane):
 
 func destroy(score):
 	$CPUParticles2D.emitting = true
-	$AnimatedSprite.visible = false
+	$AnimatedSprite2D.visible = false
 	$Timer.start()
 	hit = true
 	if score == 3:
@@ -57,6 +58,12 @@ func destroy(score):
 	elif score == 1:
 		$Node2D/Label.text = "OKAY"
 		$Node2D/Label.modulate = Color("997577")
+	else:
+		$Node2D/Label.text = "MISS"
+		$MissLabel.modulate = Color("ff5555")
+	
+
+
 
 
 func _on_Timer_timeout():
