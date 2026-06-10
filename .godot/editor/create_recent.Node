@@ -1,6 +1,9 @@
-Button
+SpinBox
 VBoxContainer
+Button
+Label
+AudioStreamPlayer2D
+AudioListener2D
 CenterContainer
 FileDialog
-Label
 HBoxContainer

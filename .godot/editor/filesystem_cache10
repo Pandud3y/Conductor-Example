@@ -1,11 +1,14 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780943224
-default_env.tres::Environment::5473014362304816045::1780943125::0::1::::<><><>0<>0<><>::
+::res://::1781042384
+bpm_calibrate.gd::GDScript::4523867889967243036::1781041283::0::1::::<>Node2D<><>0<>0<><>::
+bpm_calibrate.tscn::PackedScene::4594596864214787330::1781041671::0::1::::<><><>0<>0<><>::uid://b5pnpclvkrkoq::::res://bpm_calibrate.gd
+default_env.tres::Environment::5473014362304816045::1781041827::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1780503937::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::2408888507282025651::1780503937::1780504076::1::::<><><>0<>0<>c7aa86c4ec57a4dc35941692b9ab4700<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+Intergalactic Odyssey.ogg::AudioStreamOggVorbis::6223438167068314316::1781042356::1781042390::1::::<><><>0<>0<>4f5c59434ca383e4319c7d5806c4cf4d<>res://.godot/imported/Intergalactic Odyssey.ogg-76b0168aafe924c8f41b21b23b31f317.oggvorbisstr::
 README.md::TextFile::-1::1780503937::0::1::::<><><>0<>0<><>::
-song_select.gd::GDScript::1544217407904338214::1780943123::0::1::::<>Node2D<><>0<>0<><>::
-song_select.tscn::PackedScene::8937866977683716123::1780943123::0::1::::<><><>0<>0<><>::uid://wabbgtm8gilq::::res://song_select.gd
+song_select.gd::GDScript::1544217407904338214::1781039538::0::1::::<>Node2D<><>0<>0<><>::
+song_select.tscn::PackedScene::8937866977683716123::1781039538::0::1::::<><><>0<>0<><>::uid://wabbgtm8gilq::::res://song_select.gd
 ::res://Export/::1780504076
 favicon.png::CompressedTexture2D::5004492529552884004::1780503937::1780504076::1::::<><><>0<>0<>1ae6b64b727cb25d9e331ef803615d74<>res://.godot/imported/favicon.png-0a5a152f53d253bbf3f0fa31a8d80122.ctex::
 index.png::CompressedTexture2D::4774555991016331755::1780503937::1780504076::1::::<><><>0<>0<>6226f30b42905a33a472062fd9e09b1d<>res://.godot/imported/index.png-cca50fdcec390cb152f40e3b40014106.ctex::
@@ -36,15 +39,15 @@ Game.tscn::PackedScene::6405679983014902926::1780678841::0::1::::<><><>0<>0<><>:
 Global.tscn::PackedScene::4523265162445991000::1780505551::0::1::::<><><>0<>0<><>::uid://kpkshtk6lefg::::res://Scripts/Global.gd
 Menu.tscn::PackedScene::3839434148591397283::1780509189::0::1::::<><><>0<>0<><>::uid://d0ywisw555dhp::::res://Scripts/Menu.gd<>uid://cwohkltoaubct::::res://Sprites/ui/play_button/play1.png<>uid://dtsy7utaxwbn4::::res://Sprites/ui/play_button/play2.png<>res://Fonts/heartbit2x.tres<>uid://dttc10l7tbyxa::::res://Sprites/ui/slider.png<>uid://caatag3jloqym::::res://Sprites/ui/slider_content.png<>uid://b72tpttnryd8i::::res://Sprites/ui/slider_arrow2.png<>uid://xmnwac5b3whk::::res://Sprites/ui/slider_arrow1.png<>uid://d2m4si8vyitk5::::res://Sprites/ui/test_button/test_button1.png<>uid://iokslmi1d8g3::::res://Sprites/ui/test_button/test_button2.png<>uid://dj6n2blxdfqno::::res://Sounds/bell_ding.ogg
 Note.tscn::PackedScene::2433216486212584169::1780676119::0::1::::<><><>0<>0<><>::res://Frames/note_frames.tres<>uid://cevc66xycq4xk::::res://Sprites/game/particles/star.png<>res://Fonts/heartbit2x.tres<>uid://xcbvujnvete0::::res://Scripts/Note.gd
-::res://Scripts/::1780943004
+::res://Scripts/::1781041827
 ArrowButton.gd::GDScript::657934496980141920::1780505761::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-Conductor.gd::GDScript::6832695471032588560::1780505959::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
+Conductor.gd::GDScript::6832695471032588560::1781041827::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
 End.gd::GDScript::1060715722155606037::1780504053::0::1::::<>Node2D<><>0<>0<><>::
 Game.gd::GDScript::4658629213585422032::1780506282::0::1::::<>Node2D<><>0<>0<><>::
 Global.gd::GDScript::733493814420125960::1780675694::0::1::::<>Node2D<><>0<>0<><>::
 Menu.gd::GDScript::8964879249129984153::1780943004::0::1::::<>Node2D<><>0<>0<><>::
 Note.gd::GDScript::1618571442836779197::1780508113::0::1::::<>Area2D<><>0<>0<><>::
-::res://Sounds/::1780504076
+::res://Sounds/::1781040887
 bell_ding.ogg::AudioStreamOggVorbis::7855794962104281856::1780503937::1780504076::1::::<><><>0<>0<>953e83eeef03e72dc5dd4f4be1ab31bf<>res://.godot/imported/bell_ding.ogg-f0d0e0f5f70963587f9395e11c38efd6.oggvorbisstr::
 song.ogg::AudioStreamOggVorbis::3736057473023013265::1780503937::1780504076::1::::<><><>0<>0<>f312ccb0050c0b305fd442ed6af4ac4f<>res://.godot/imported/song.ogg-5534b76bb01b7d004af1f7764679469c.oggvorbisstr::
 ::res://Sprites/::1780503937

@@ -13,8 +13,8 @@ func _on_SelectButton_pressed():
 
 func _on_file_selected(path):
 	Global.song_path = path
-	$FileNameLabel.text = path.get_file()
-	$NextButton.disabled = false
+	$VBoxContainer/FileNameLabel.text = path.get_file()
+	$VBoxContainer/NextButton.disabled = false
 
 func _on_NextButton_pressed():
-	get_tree().change_scene_to_file("res://Scenes/BPMCalibrate.tscn")
+	get_tree().change_scene_to_file("res://bpm_calibrate.tscn")

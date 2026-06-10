@@ -21,6 +21,12 @@ var time_off_beat = 0.0
 
 
 func _ready():
+	print("song path: ", Global.song_path)
+	print("custom bpm: ", Global.custom_bpm)
+	if Global.song_path != "":
+		var stream = load(Global.song_path)
+		self.stream = stream
+	bpm = Global.custom_bpm
 	sec_per_beat = 60.0 / bpm
 
 

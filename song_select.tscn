@@ -24,5 +24,6 @@ layout_mode = 2
 
 [node name="NextButton" type="Button" parent="VBoxContainer" unique_id=233649967]
 layout_mode = 2
+text = "Next"
 
 [node name="FileDialog" type="FileDialog" parent="." unique_id=1044396370]
